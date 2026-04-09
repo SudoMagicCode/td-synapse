@@ -121,6 +121,9 @@ class Synapse:
             'activeOps': int(self.cook_info_chop['active_ops'][0]),
             'realTime': bool(self.cook_info_chop['cookrealtime'][0]),
             'performMode': bool(self.cook_info_chop['perform_mode'][0]),
+            'frame': int(self.cook_info_chop['frameTime'][0]),
+            'rootTimelineLength': int(self.cook_info_chop['rootTimeLength'][0]),
+            'absFrame': int(self.cook_info_chop['absFrame'][0]),
         }
 
         return info
